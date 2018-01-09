@@ -1,10 +1,10 @@
-# Worker rush
-
-## Strategy overview
+# Strategy overview
 
 Select all starting workers and attack to the enemy base. This can be done with any race, although Zerg is considered to be strongest, as their workers automatically regenerate health.
 
-## Code, step by step
+Worker rush is an extreme all-in build ([cheese](http://liquipedia.net/starcraft2/Cheese)). It usually loses the game, since the opponent will always have more workers than you, but incorrectly reacting to it can easily lose the game as well.
+
+# Code, step by step
 
 ```python
 # Import the library
