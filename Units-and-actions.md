@@ -2,7 +2,7 @@ Everything dynamic in StarCraft 2 is a unit. Walking creatures, buildings, and e
 
 # Unit groups
 
-Unit group ([sc2.units.Units](https://github.com/Dentosal/python-sc2/blob/master/sc2/units.py)) is an ordered set-like structure containing all units. Normal set operations (`|`, `&`, `-`) an be used with unit groups.
+Unit group ([sc2.units.Units](https://github.com/Dentosal/python-sc2/blob/master/sc2/units.py)) is an ordered set-like structure containing all units. Normal set operations (`|`, `&`, `-`) can be used with unit groups.
 
 ## Properties
 
