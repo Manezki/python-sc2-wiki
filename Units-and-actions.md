@@ -107,6 +107,8 @@ Name               | Description
 `noqueue`          | Is the order queue empty
 `is_idle`          | No current action
 `name`             | Unit type name
+`assigned_harvesters` | Harvester units assigned to this unit
+`ideal_harvesters` | Ideal number of harvester units for this unit
 
 ## Actions
 
