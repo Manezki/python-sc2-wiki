@@ -16,7 +16,7 @@ class WorkerRushBot(sc2.BotAI):
     # The on_step function is called for every game step
     # It is defined as async because it calls await functions
     # It takes current game state and current iteration
-    async def on_step(self, state, iteration):
+    async def on_step(self, iteration):
 
         if iteration == 0: # If this is the first frame
 
