@@ -13,6 +13,7 @@ Name                    | Description
 `units`                 | Own units
 `minerals`              | Amount of minerals (int)
 `vespene`               | Amount of vespene gas (int)
+`state.game_loop`       | Current game loop (int) (See [issue #29](https://github.com/Dentosal/python-sc2/issues/29#issuecomment-365874073) for explanation)
 `state.mineral_field`   | Mineral fields on map
 `state.vespene_geyser`  | Vespene geysers on map
 `supply_left`           | Supply capacity left (Terran: provided by supply depots, Protoss: provided by pylons, Zerg: provided by overlords)
