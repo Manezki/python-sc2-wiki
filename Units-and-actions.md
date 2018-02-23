@@ -23,6 +23,8 @@ Name                  | Description
 `take(n)`             | Takes first `n` units in the group, or all if the group is smaller
 `random_of(other)`    | A random unit in the group, or `other` in case that the group is empty
 `closest_to(position)`| The unit closest to `position`
+`find_by_tag`         | Find unit by tag, returns None if not found
+`by_tag`              | Find unit by tag, throws KeyError if not found
 
 ## Unit group selectors
 
