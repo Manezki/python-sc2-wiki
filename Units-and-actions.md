@@ -1,4 +1,4 @@
-Everything dynamic in StarCraft 2 is a unit. Walking creatures, buildings, and even mineral fields are all units. Units are passed you your `async def on_step(self, state, iteration)` method inside the `state` parameter, as `state.units`, which is a group of all known units in the game.
+Everything dynamic in StarCraft 2 is a unit. Walking creatures, buildings, and even mineral fields are all units. Units are passed you your `async def on_step(self, iteration)` method inside the `self.state` property, as `self.state.units`, which is a group of all known units in the game. Your own units are also available as `self.units`.
 
 # Unit groups
 
