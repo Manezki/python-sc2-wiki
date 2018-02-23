@@ -8,6 +8,7 @@ Name                    | Description
 `race`                  | One of Zerg, Terran, Protoss
 `game_info`             | A [GameInfo](https://github.com/Dentosal/python-sc2/blob/master/sc2/game_info.py) object, contains the initial/static game state
 `enemy_start_locations` | A list of possible enemy start locations
+`known_enemy_units`     | A list of known (and seen) enemy units, including structures
 `known_enemy_structures`| A list of known (and seen) enemy structures
 `workers`               | Own worker units
 `units`                 | Own units
@@ -16,7 +17,8 @@ Name                    | Description
 `state.game_loop`       | Current game loop (int) (See [issue #29](https://github.com/Dentosal/python-sc2/issues/29#issuecomment-365874073) for explanation)
 `state.mineral_field`   | Mineral fields on map
 `state.vespene_geyser`  | Vespene geysers on map
-`supply_left`           | Supply capacity left (Terran: provided by supply depots, Protoss: provided by pylons, Zerg: provided by overlords)
+`supply_left`           | Supply capacity left provided by bases and (Terran: supply depots, Protoss: pylons, Zerg: overlords)
+`owned_expansions`      | A list of expansions owned by the player
 
 # Methods
 
