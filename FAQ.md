@@ -9,11 +9,13 @@ Feel free to take a look at [the protoss/terran/zerg examples](https://github.co
 # What do I have access to in the step() function?
 You have access to:
 
-- all the basic BotAI class properties and functions listed [here](https://github.com/Dentosal/python-sc2/blob/master/sc2/bot_ai.py) and [here](https://github.com/Dentosal/python-sc2/blob/master/sc2/bot_ai.py#L386) through `self.<property_name>`, 
+- all the basic BotAI class properties and functions listed [here](https://github.com/Dentosal/python-sc2/blob/master/sc2/bot_ai.py) and [here](https://github.com/Dentosal/python-sc2/blob/master/sc2/bot_ai.py#L386) through `self.<property_name>` which contain basic functions that handle [macromanagement](https://liquipedia.net/starcraft2/Macro), 
 
-- all [the game state variables](https://github.com/Dentosal/python-sc2/blob/master/sc2/game_state.py#L82) through `self.state.<variable_name>`, 
+- all [the game state variables](https://github.com/Dentosal/python-sc2/blob/master/sc2/game_state.py#L82) through `self.state.<variable_name>` which contain data that can change each step, 
 
-- all [the game info variables](https://github.com/Dentosal/python-sc2/blob/master/sc2/game_info.py#L126) through `self._game_info.<variable_name>`,
+- all [the game info variables](https://github.com/Dentosal/python-sc2/blob/master/sc2/game_info.py#L126) through `self._game_info.<variable_name>` which contain static map and player related data,
+
+- all [the game data variables](https://github.com/Dentosal/python-sc2/blob/master/sc2/game_data.py#L25) through `self._game_data.<variable_name>` which contain static unit/ability/buff related data,
 
 - your units [`self.units`](https://github.com/Dentosal/python-sc2/blob/master/sc2/units.py) and visible enemy units [`self.known_enemy_units`](https://github.com/Dentosal/python-sc2/blob/master/sc2/units.py) which contain units of type [Unit](https://github.com/Dentosal/python-sc2/blob/master/sc2/unit.py). Both have properties and functions available.
 
