@@ -17,7 +17,7 @@ You have access to:
 
 - all [the game data variables](https://github.com/Dentosal/python-sc2/blob/master/sc2/game_data.py#L25) through `self._game_data.<variable_name>` which contain static unit/ability/buff related data,
 
-- your units [`self.units`](https://github.com/Dentosal/python-sc2/blob/master/sc2/units.py) and visible enemy units [`self.known_enemy_units`](https://github.com/Dentosal/python-sc2/blob/master/sc2/units.py) which contain units of type [Unit](https://github.com/Dentosal/python-sc2/blob/master/sc2/unit.py). Both have properties and functions available.
+- your units [`self.units`](https://github.com/Dentosal/python-sc2/blob/master/sc2/units.py) and visible enemy units [`self.known_enemy_units`](https://github.com/Dentosal/python-sc2/blob/master/sc2/units.py) which is a list-like object and contain units of type [Unit](https://github.com/Dentosal/python-sc2/blob/master/sc2/unit.py). Both have properties and functions available.
 
 
 # Why does my bot behave differently in realtime=True vs realtime=False?
