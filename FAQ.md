@@ -16,3 +16,9 @@ You have access to:
 - all [the game info variables](https://github.com/Dentosal/python-sc2/blob/master/sc2/game_info.py#L126) through `self._game_info.<variable_name>`,
 
 - your units [`self.units`](https://github.com/Dentosal/python-sc2/blob/master/sc2/units.py) and visible enemy units [`self.known_enemy_units`](https://github.com/Dentosal/python-sc2/blob/master/sc2/units.py) which contain units of type [Unit](https://github.com/Dentosal/python-sc2/blob/master/sc2/unit.py). Both have properties and functions available.
+
+
+# Why does my bot behave differently realtime=True vs realtime=False?
+realtime=False will wait for your bot step to finish before confirming the next game loop.
+
+realtime=True on the other hand will not wait and will strictly continue. So your bot will only have a fixed amount of time to complete its step before the next game loop is called, regardless if your bot step is finished or not. That means calculating placement locations using `self.find_placement()` or `self.expand_now()` may result in a delayed action.
