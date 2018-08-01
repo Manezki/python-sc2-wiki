@@ -6,3 +6,4 @@ If you have not played StarCraft II before, I suggest looking at the [game overv
 * Getting started: [Worker rush](./Worker-rush-bot)
 * API docs: [BotAI class](./The-BotAI-class), [Units and actions](./Units-and-actions)
 
+Plans for this repository in the near future can be [found on this trello board](https://trello.com/b/ieMgHqfq)
