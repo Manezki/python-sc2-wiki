@@ -24,3 +24,11 @@ You have access to:
 realtime=False will wait for your bot step to finish before confirming the next game loop.
 
 realtime=True on the other hand will not wait and will strictly continue. So your bot will only have a fixed amount of time to complete its step before the next game loop is called, regardless if your bot step is finished or not. That means calculating placement locations using `self.find_placement()` or `self.expand_now()` may result in a delayed action.
+
+# This is all nice and good but where do I find better bot examples?
+Bots that have been put on the [Bot ladder](http://sc2ai.net/) can be found here:
+- [Bot by Hannessa](https://github.com/Hannessa/sc2-bots/tree/master/cannon-lover)
+- [Bot by BuRny](https://github.com/BurnySc2/burny-bots-python-sc2/tree/master/CreepyBot)
+- a collection of ladder bots (not restricted to python-sc2) https://github.com/m1ndgames/sc2ai-ladderbot-collection
+
+Also the source code of bots from the ladder are sometimes publicly available.
