@@ -36,5 +36,11 @@ Also the source code of bots from the ladder are sometimes publicly available.
 # The pip version seems to be outdated, how do I install the version from github?
 The command to install from github is
 ```
+pip install pyenv
 pip install --upgrade git+https://github.com/Dentosal/python-sc2.git
+```
+or alternatively
+```
+python3.6 -m pip install pyenv
+python3.6 -m pip install --upgrade git+https://github.com/Dentosal/python-sc2.git
 ```
