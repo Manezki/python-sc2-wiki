@@ -32,3 +32,9 @@ Bots that have been put on the [Bot ladder](http://sc2ai.net/) can be found here
 - a collection of ladder bots (not restricted to python-sc2) https://github.com/m1ndgames/sc2ai-ladderbot-collection
 
 Also the source code of bots from the ladder are sometimes publicly available.
+
+# The pip version seems to be outdated, how do I install the version from github?
+The command to install from github is
+```
+pip install --upgrade git+https://github.com/Dentosal/python-sc2.git
+```
