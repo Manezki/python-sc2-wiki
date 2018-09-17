@@ -33,6 +33,19 @@ Bots that have been put on the [Bot ladder](http://sc2ai.net/) can be found here
 
 Also the source code of bots from the ladder are sometimes publicly available.
 
+# I think I am ready to put my bot on the ladder, how do I do that?
+
+- Make a copy of the repo https://github.com/Hannessa/python-sc2-ladderbot
+- Replace the example bot with your bot
+- In `run.py` edit the following lines to match your bot's filename, name and race:
+```python
+from example_bot import ExampleBot
+bot = Bot(Race.Random, ExampleBot())
+```
+- Add the `sc2` folder from `python-sc2` as a subfolder to make your bot immune to `python-sc2` updates that may break your bot
+- Run the `run.py` to see if it works locally
+- Update the zipped folder to http://sc2ai.net/ (after making an account)
+
 # The pip version seems to be outdated, how do I install the version from github?
 The command to install from github is
 ```
