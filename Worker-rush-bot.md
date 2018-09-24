@@ -28,6 +28,9 @@ class WorkerRushBot(sc2.BotAI):
                 await self.do(worker.attack(self.enemy_start_locations[0]))      
 ```
 
+### Running the bot
+Depending on your taste, add one of the following to the end of the file.
+
 If you want to run this against a built in AI:
 
 ```python
@@ -52,3 +55,5 @@ run_game(maps.get("Abyssal Reef LE"), [
     Bot(Race.Zerg, WorkerRushBot())
 ], realtime=True)
 ```
+
+**Finally**, run the python-script.
