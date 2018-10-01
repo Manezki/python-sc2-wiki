@@ -1,10 +1,14 @@
-# Strategy overview
+With everything installed in the [previous step](./Getting-started), it is time to create the first bot.
+
+# Strategy overview 
 
 Select all starting workers and attack to the enemy base. This can be done with any race, although Zerg is considered to be strongest, as their workers automatically regenerate health.
 
 Worker rush is an extreme all-in build ([cheese](http://liquipedia.net/starcraft2/Cheese)). It usually loses the game, since the opponent will always have more workers than you, but incorrectly reacting to it can easily lose the game as well.
 
 # Code, step by step
+
+Create a new python-file to desired location and include the following code.
 
 ```python
 # Import the library
@@ -29,7 +33,7 @@ class WorkerRushBot(sc2.BotAI):
 ```
 
 ### Running the bot
-Depending on your taste, add one of the following to the end of the file.
+Depending on your taste, **add one of the following to the end of the file**.
 
 If you want to run this against a built in AI:
 
