@@ -23,13 +23,14 @@ If you have not played StarCraft II before, the installation will require accoun
 For Linux only headless version is available, and the binaries and installation instructions can be found [here](https://github.com/Blizzard/s2client-proto/blob/master/docs/linux.md#setup). Even though the binaries are headless - the games will produce replays that can be inspected after the game.
 
 ### Maps
-Before running the bots is possible, some maps need to be manually installed. The map-packs in [Blizzard/sc2client-proto](https://github.com/Blizzard/s2client-proto#map-packs) are recommended.
+Before running the bots is possible, some maps need to be manually installed. The map-packs in [Blizzard/sc2client-proto](https://github.com/Blizzard/s2client-proto#map-packs) are recommended. Don't be too picky, just download them all.
 
 Download the zips and extract them to 'StarCraft II's Maps-folder ( password for the zips is: 'iagreetotheeula', referring to [here](https://github.com/Blizzard/s2client-proto#downloads) ).
 If you did use default options when installing StarCraft II, you should find the Maps folder in:
 * Windows: ``"C:/Program Files (x86)/StarCraft II/Maps"``
 * MacOs: ``Applications/StarCraft II/Maps``
 * Linux: ``~/StarCraftII/Maps``
+The maps should be left into the folders that they are contained in.
 
 ## Building your first bot
 With everything now installed, we are ready to try your first bot: [The worker rush](./Worker-rush-bot.md)
