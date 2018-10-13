@@ -1,4 +1,4 @@
-With everything installed in the [previous step](./Getting-started), it is time to create the first bot.
+With everything installed in the [previous step](./Getting-started), it is time to create the first bot that will play against the games own AI.
 
 # Strategy overview 
 
@@ -13,6 +13,8 @@ Create a new python-file to desired location and include the following code.
 ```python
 # Import the library
 import sc2
+from sc2 import run_game, maps, Race, Difficulty
+from sc2.player import Bot, Computer
 
 # All bots inherit from sc2.BotAI
 class WorkerRushBot(sc2.BotAI):
@@ -30,34 +32,13 @@ class WorkerRushBot(sc2.BotAI):
                 # (Assumes that there is only one possible starting location
                 # for the opponent, which depends on the map)
                 await self.do(worker.attack(self.enemy_start_locations[0]))      
-```
 
-### Running the bot
-Depending on your taste, **add one of the following to the end of the file**.
 
-If you want to run this against a built in AI:
-
-```python
-from sc2 import run_game, maps, Race, Difficulty
-from sc2.player import Bot, Computer
-
+# Parameters for starting the game.
+# This will open a new window where the game is played.
 run_game(maps.get("Abyssal Reef LE"), [
     Bot(Race.Zerg, WorkerRushBot()),
     Computer(Race.Protoss, Difficulty.Medium)
 ], realtime=True)
 ```
 
-
-Or if you want to play against this yourself:
-
-```python
-from sc2 import run_game, maps, Race
-from sc2.player import Bot, Human
-
-run_game(maps.get("Abyssal Reef LE"), [
-    Human(Race.Terran),
-    Bot(Race.Zerg, WorkerRushBot())
-], realtime=True)
-```
-
-**Finally**, run the python-script.
