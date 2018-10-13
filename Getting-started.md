@@ -33,4 +33,4 @@ If you did use default options when installing StarCraft II, you should find the
 The maps should be left into the folders that they are contained in.
 
 ## Building your first bot
-With everything now installed, we are ready to try your first bot: [The worker rush](./Worker-rush-bot.md)
+With everything now installed, we are ready to try your [first bot](./Very-first-bot).

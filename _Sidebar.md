@@ -1,7 +1,7 @@
 * [Home](./Home)
 * [Getting started](./Getting-started)
     * [Installation](./Getting-started)
-    * [Worker rush bot](./Worker-rush-bot)
+    * [Very first bot](./Very-first-bot)
 * [BotAI class](./The-BotAI-class)
     * [Properties](./The-BotAI-class#properties)
     * [Methods](./The-BotAI-class#methods)

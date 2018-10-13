@@ -2,7 +2,7 @@ With everything installed in the [previous step](./Getting-started), it is time 
 
 # Strategy overview 
 
-Select all starting workers and attack to the enemy base. This can be done with any race, although Zerg is considered to be strongest, as their workers automatically regenerate health.
+We will be using strategy called **Worker rush**, where we will select all our workers and attack to the enemy base. This can be done with any race, although Zerg is considered to be strongest, as their workers automatically regenerate health.
 
 Worker rush is an extreme all-in build ([cheese](http://liquipedia.net/starcraft2/Cheese)). It usually loses the game, since the opponent will always have more workers than you, but incorrectly reacting to it can easily lose the game as well.
 
@@ -40,6 +40,9 @@ run_game(maps.get("Abyssal Reef LE"), [
     Computer(Race.Protoss, Difficulty.Medium)
 ], realtime=True)
 ```
+
+Now, by running the file, we can see the bot in action.
+
 # On_step(self, iteration)
 On_step is responsible for keeping your bot up to date with the game. It get's called on every game step, and your game logic should be called from inside the on_step function.
 
