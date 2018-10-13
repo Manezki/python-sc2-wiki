@@ -20,8 +20,7 @@ from sc2.player import Bot, Computer
 class WorkerRushBot(sc2.BotAI):
 
     # The on_step function is called for every game step
-    # It is defined as async because it calls await functions
-    # It takes current game state and current iteration
+    # and all the actions should be called from within this function.
     async def on_step(self, iteration):
 
         if iteration == 0: # If this is the first frame
@@ -41,4 +40,10 @@ run_game(maps.get("Abyssal Reef LE"), [
     Computer(Race.Protoss, Difficulty.Medium)
 ], realtime=True)
 ```
+# On_step(self, iteration)
+On_step is responsible for keeping your bot up to date with the game. It get's called on every game step, and your game logic should be called from inside the on_step function.
 
+Notice that the on_step is asynchronous, so following practices of asynchronous programming is required.
+
+# Issuing actions
+Actions to be executed are passed through `self.do()` and should be passed for each unit individually. Here we have iterated over self.workers, which contains only the worker units.
