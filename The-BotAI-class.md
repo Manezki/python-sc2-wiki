@@ -74,7 +74,7 @@ Name                    | Description
 `map_center`            | The center of the map as `Point2`
 
 
-# The GameInfo Class
+# The GameState Class
 ## Properties
 Name                    | Description
 ------------------------|-------------
