@@ -1,6 +1,10 @@
-The purpose of this Getting Started section is to give you an understanding how to: make sure you are able to launch a game, command and train units, build buildings, and to share some tips to allow higher level maneuvers.
+The purpose of this Getting Started section is to give you an understanding how to: make sure you are able to launch a game and run your bot. [Examples folder](https://github.com/Dentosal/python-sc2/tree/master/examples) of the repository contains more impactful examples.
 
-## Python-sc2
+# Installation 
+
+Note that there are three parts for the installation: Python-sc2, SC II game-client and Maps.
+
+### Python-sc2
 Before we continue, make sure you have Python version of at least 3.6 available.
 
 This can be checked on Linux and MacOs with terminal, using following command:
@@ -14,7 +18,7 @@ Now the python-sc2 package can be installed via pip:
 pip3 install --user --upgrade sc2
 ```
 
-## StarCraft II client and maps
+### StarCraft II client and maps
 ### Game client
 * #### Windows & MacOs
 If you have not played StarCraft II before, the installation will require account creation and a download of ``Battle.net`` client. StarCraft II is free and can be downloaded through ``Battle.net``. To start the journey, head over to [Blizzard website](https://us.battle.net/account/sc2/starter-edition/) and grab the starter version.
@@ -32,5 +36,5 @@ If you did use default options when installing StarCraft II, you should find the
 * Linux: ``~/StarCraftII/Maps``
 The maps should be left into the folders that they are contained in.
 
-## Building your first bot
+# Building your first bot
 With everything now installed, we are ready to try your [first bot](./Very-first-bot).
